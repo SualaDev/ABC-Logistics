@@ -46,7 +46,7 @@ export default {
 }
 .nav-links a{
   text-decoration: none;
-  color: #000;
+  color: white;
   font-size: 2.5rem;
   line-height: 3rem;
   font-weight: 400;
