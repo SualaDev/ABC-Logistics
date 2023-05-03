@@ -54,7 +54,8 @@ export default {
 }
 .location {
   background-image: url(~assets/images/location.svg);
-  width: 579.44px;
+  background-repeat: no-repeat;
+  width: 100%;
   height: 450px;
 }
 .second-card {
@@ -66,7 +67,8 @@ export default {
 }
 .phone {
   background-image: url(~assets/images/phone.svg);
-  width: 530.52px;
+  background-repeat: no-repeat;
+  width: 100%;
   height: 449.99px;
 }
 .third-card {
@@ -79,14 +81,20 @@ export default {
 }
 .world {
   background-image: url(~assets/images/world-location.svg);
-  width: 627.88px;
+  background-repeat: no-repeat;
+  width: 100%;
   height: 450px;
 }
 .text {
   display: flex;
   flex-direction: column;
 }
-.attraction {
+
+.attraction, .direction, .trip{
+  width: 50%;
+}
+
+/* .attraction {
   width: 383px;
 }
 .direction {
@@ -94,7 +102,7 @@ export default {
 }
 .trip {
   width: 296px;
-}
+} */
 h2 {
   font-size: 35px;
   line-height: 2.75rem;
@@ -130,6 +138,7 @@ p {
     background-size: 65%;
     background-repeat: no-repeat;
     background-position: center center;
+    width: 100%;
   }
 }
 </style>

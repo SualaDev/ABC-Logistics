@@ -2,9 +2,11 @@
   <div>
     <div class="first-segment">
       <div class="text">
+        <div class="line"></div>
         <h2 class="text-header">
           We understand, exploring cities can be hard
         </h2>
+        <div class="line"></div>
       </div>
       <div class="images">
         <div class="road-sign">
@@ -41,7 +43,7 @@ export default {
   align-items: center;
   padding: 8.4rem 0 8.4rem 0;
   margin: 0 4rem 0 4rem;
-  border-top: 1px solid rgb(192,192,192,0.3);
+  /* border-top: 1px solid rgb(192,192,192,0.3); */
   border-bottom: 1px solid rgb(192,192,192,0.3);
   column-gap: 8.3rem;
 }
@@ -72,18 +74,23 @@ export default {
   margin-bottom: 16.93px;
 }
 .text{
-  position: absolute;
-  top: 590px;
-  left: 460px;
-  text-align: center;
-  padding: 0 2rem;
-  background-color: #FFF;
-  font-size: 21px;
-  line-height: 2.75rem;
-  font-family: 'Cereal Medium';
-  font-weight: 500;
-  width: 452px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.text .line{
+  background: rgb(198, 198, 198);
+  width: 50%;
+  height: 1px;
+}
+
+.text .text-header{
+  /* width: 15rem; */
+  text-align: center;
+  font-size: 1.5rem;
+}
+
 .yellow{
   position: absolute;
   top: 650px;
@@ -92,22 +99,29 @@ export default {
   width: 451px;
   height: 23px;
 }
+@media only screen and (max-width: 769px){
+.first-segment{
+  padding: 9rem 0;
+  position: relative;
+}
+}
+
 @media only screen and (max-width: 1300px){
   .images{
     display: flex;
     flex-direction: column;
     row-gap: 8.3rem
   }
-  .text{
+  /* .text{
     position: absolute;
     top: 590px;
     left: 400px;
     text-align: center;
     padding: 0 2rem;
     background-color: #FFF;
-  }
+  } */
 }
-@media only screen and (max-width: 1200px){
+/* @media only screen and (max-width: 1200px){
   .text{
     position: absolute;
     top: 590px;
@@ -156,8 +170,8 @@ export default {
     padding: 0 2rem;
     background-color: #FFF;
   }
-}
-@media screen and (max-width: 500px){
+} */
+/* @media screen and (max-width: 500px){
   .text{
     top: 490px;
     left: 20px;
@@ -166,5 +180,5 @@ export default {
     font-size: 1.3rem;
     max-width: 290px;
   }
-}
+} */
 </style>

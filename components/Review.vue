@@ -148,5 +148,8 @@ export default {
   .forward-btn,.back-btn{
     display: none;
   }
+  .details{
+    width: 13rem;
+  }
 }
 </style>
